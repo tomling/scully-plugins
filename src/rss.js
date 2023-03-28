@@ -15,7 +15,7 @@ config.categories.forEach((cat) => {
 });
 
 const rssPlugin = (routes) => {
-  log('Started @notiz/scully-plugin-rss');
+  log('Started @tomling/scully-plugin-rss');
 
   const blogPosts = routes.filter(
     (r) =>
@@ -54,7 +54,7 @@ const rssPlugin = (routes) => {
     throw error;
   }
 
-  log('Finished @notiz/scully-plugin-rss');
+  log('Finished @tomling/scully-plugin-rss');
 };
 
 const createFeedItemFromRoute = (route) => {

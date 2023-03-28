@@ -71,7 +71,7 @@ const createFeedItemFromRoute = (route) => {
 
       item = {
         title: route.data.title,
-        id: route.route,
+        id: config.link + route.route,
         link: config.link + route.route,
         description: route.data.description,
         content: articleHTML,
